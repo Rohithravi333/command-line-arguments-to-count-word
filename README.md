@@ -20,16 +20,23 @@ split the line using .split
 ## PROGRAM:
 ```
 import sys
-count=0
-with open(sys.argv[1],'r') as f:
-        for line in f:
-            word=line.split()
-            count+=len(word)
-print("Word Count in File=",count)         
+fp-open(sys.argv[1],"r")
+d-{}
+for i in fp:
+    for w in i.split():
+      if w not in d.keys():
+         d[w]-1
+    else:
+         d[w]+=1
+print(d)
+     
 ```
 
+
 ### OUTPUT:
-![tam](https://github.com/Rohithravi333/command-line-arguments-to-count-word/assets/119394126/f362d6b7-2781-482b-95bb-e5130e06e365)
+
+![Screenshot 2023-06-17 113845](https://github.com/Rohithravi333/command-line-arguments-to-count-word/assets/119394126/0c543cf8-cb2b-4fb6-b9eb-8ebbc7b8bba5)
+![Screenshot 2023-06-17 114536](https://github.com/Rohithravi333/command-line-arguments-to-count-word/assets/119394126/f37ad59e-5643-462d-b9d4-d9bc365c6ca9)
 
 
 
